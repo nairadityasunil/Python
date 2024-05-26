@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee List</h1>
+    {% if emp_list %}
+    <table>
+        <thead>
+            <th>eid</th>
+            <th>ename</th>
+        </thead>
+        {% for emp in emp_list %}   
+            <tr>
+                <td>{{emp.eid}}</td>
+                <td>{{emp.ename}}</td>
+
+            </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No Records Found</p>
+    {% endif %}
+
+
+    <h1>Update List</h1>
+    <form action="update/" method="post">
+        {% csrf_token %}
+        Row Number :<br>
+        <input name="eid">
+        <br><br>
+        Name:<br>
+        <input name="ename">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <h1>Delete List</h1>
+    <form action="delete/" method="post">
+        {% csrf_token %}
+        Row Number :<br>
+        <input name="eid">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+Here are the commonly used methods for lists, tuples, and dictionaries in Python:
+
+### List Methods
+
+1. **append(x)**: Add an item to the end of the list.
+2. **extend(iterable)**: Extend the list by appending all the items from the iterable.
+3. **insert(i, x)**: Insert an item at a given position.
+4. **remove(x)**: Remove the first item from the list whose value is equal to x.
+5. **pop([i])**: Remove the item at the given position in the list, and return it. If no index is specified, `pop()` removes and returns the last item in the list.
+6. **clear()**: Remove all items from the list.
+7. **index(x[, start[, end]])**: Return zero-based index in the list of the first item whose value is equal to x.
+8. **count(x)**: Return the number of times x appears in the list.
+9. **sort(key=None, reverse=False)**: Sort the items of the list in place (the arguments can be used for sort customization).
+10. **reverse()**: Reverse the elements of the list in place.
+11. **copy()**: Return a shallow copy of the list.
+
+### Tuple Methods
+
+Tuples have fewer methods because they are immutable:
+
+1. **count(x)**: Return the number of times x appears in the tuple.
+2. **index(x[, start[, end]])**: Return the index of the first item whose value is equal to x.
+
+### Dictionary Methods
+
+1. **clear()**: Remove all items from the dictionary.
+2. **copy()**: Return a shallow copy of the dictionary.
+3. **fromkeys(iterable[, value])**: Create a new dictionary with keys from `iterable` and values set to `value`.
+4. **get(key[, default])**: Return the value for key if key is in the dictionary, else `default`.
+5. **items()**: Return a new view of the dictionary’s items (key, value pairs).
+6. **keys()**: Return a new view of the dictionary’s keys.
+7. **pop(key[, default])**: Remove the specified key and return the corresponding value. If the key is not found, `default` is returned if provided, otherwise a `KeyError` is raised.
+8. **popitem()**: Remove and return a (key, value) pair from the dictionary. Pairs are returned in LIFO (last-in, first-out) order.
+9. **setdefault(key[, default])**: Return the value of the key if it is in the dictionary, if not, insert key with a value of `default`.
+10. **update([other])**: Update the dictionary with the key/value pairs from `other`, overwriting existing keys.
+11. **values()**: Return a new view of the dictionary’s values.
+
+These methods provide the essential functionality for manipulating lists, tuples, and dictionaries in Python.
